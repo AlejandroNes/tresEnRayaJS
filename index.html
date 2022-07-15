@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css">
+    <title>Tres en Raya</title>
+</head>
+<body>
+    <h1 class="text-white bg-success text-center py-2">TRES EN RAYA</h1>
+    <div class="d-flex justify-content-center gap-2 my-4 botones">
+        <p class="m-0 me-3">Escoje una opción:</p>
+        <button class="btn btn-sm btn-outline-dark rounded-0 " data-id="1">Piedra</button>
+        <button class="btn btn-sm btn-outline-dark rounded-0 " data-id="2">Papel</button>
+        <button class="btn btn-sm btn-outline-dark rounded-0 " data-id="3">Tijera</button>
+    </div>
+    <div class="container ">
+        <div class="row">
+            <div class="col-12 col-sm-6">
+                <div class="player shadow p-2">
+                    <h4 class="bg-primary text-white text-center p-1">Player</h4>
+                    <div class="resultado1">
+                        <p class="text-center mt-4">sin resultados</p>
+                        <!-- <img class="img-fluid" src="img/PIEDRA.png" alt=""> -->
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-6">
+                <div class="computer shadow p-2">
+                    <h4 class="bg-danger text-white text-center p-1">Computer</h4>
+                    <div class="resultado2">
+                        <p class="text-center mt-4">sin resultados</p>
+                        <!-- <img class="img-fluid" src="img/TIJERA.png" alt=""> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row mb-5">
+            <div class="col-12 mt-5 d-flex justify-content-between">
+                <p class="text-muted fw-light">PUNTOS PLAYER: <span class="fw-bold" id="pPlayer"></span></p>
+                <p class="text-muted fw-light">PUNTOS COMPUTER: <span class="fw-bold" id="pComputer"></span></p>
+            </div>
+            <div class="ganador mt-5 d-flex justify-content-between">
+                
+            </div>
+        </div>
+    </div>
+
+
+<script src="app.js"></script>
+</body>
+</html>
